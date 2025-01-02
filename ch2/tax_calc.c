@@ -13,5 +13,5 @@ void calcTax(void){
     printf("Enter a pre-tax total: ");
     scanf("%f", &preTax);
     total = (rate * preTax) + preTax;
-    printf("Your post-tax total is: %.2f\n", total);
+    printf("\aYour post-tax total is: %.2f\n", total);
 }
