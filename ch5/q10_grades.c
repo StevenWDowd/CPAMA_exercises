@@ -10,6 +10,10 @@ void convert_grade(void){
     int grade;
     printf("Enter a grade on the 0-100 scale: ");
     scanf("%d", &grade);
+    if (grade < 0 || grade > 100){
+        printf("Illegal grade entered\n");
+    }
+    else{
     int rem = grade % 10;
     grade = (grade - rem) / 10;
 
@@ -24,6 +28,7 @@ void convert_grade(void){
         break;
         case 5: case 4: case 3: case 2: case 1: case 0: printf("Letter Grade: F\n");
         break;
-        default: printf("Illegal grade entered\n");
+        //default: printf("Illegal grade entered\n");
     }
+}
 }
