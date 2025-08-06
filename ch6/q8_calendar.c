@@ -15,13 +15,13 @@ void calendar(void){
     if (start_day != 1){
         int spaces = 1;
         while (spaces < start_day) {
-            printf(" ");
+            printf("    ");
             spaces++;
         }
     }
     int place = start_day;
     for (int i = 1; i < days + 1; i++){
-        printf("%d", i);
+        printf("%3d", i);
         place++;
         if (place > 7){
             printf("\n");
